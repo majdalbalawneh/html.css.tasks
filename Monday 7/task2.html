@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 10px;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap: 5px;
+        column-gap: 5px;
+        
+        
+            }
+            
+            .parent div{
+              text-align: center;
+            padding: 20px ;
+            border: 1px solid white;
+           }
+           .a{
+  grid-column: 1/span3;
+  background-color: black;
+}
+.b{
+  grid-column:2/span 3;
+  background-color: orange;
+}
+          
+ .c{
+  grid-column: span;
+ background-color: green;
+ }
+  .d{
+    grid-column:1/span4;
+    background-color: blue
+  }
+ .e{
+  grid-column-start: ;
+  grid-column-end: ;
+  }
+  .f{
+  grid-column-start: ;
+  grid-column-end: ;
+  }
+  .j{
+  grid-column-start: ;
+  grid-column-end: ;
+  }
+  .h{
+  grid-column-start: ;
+  grid-column-end: ;
+  }
+  .i{
+  grid-column-start: ;
+  grid-column-end: ;
+  
+
+
+          </style>
+         </head>
+        <body>
+        <div class="parent">
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c"></div>
+        <div class="d"></div>
+        <div class="e">5</div> 
+      <!--<
+       <div class="f">6</div>
+        <div class="j">7</div>
+        <div class="h">8</div>
+        <div class="i">9</div>
+                             -->   
+    </div>
+</body>
+</html>

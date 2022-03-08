@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <STYle>
+
+
+        body{
+            background-color: grey;
+            position: relative;
+        }
+        
+        @keyframes button{
+            from{ background-color: grey;}
+            to  { background-color: palevioletred;}
+        }
+        div{
+            
+            padding: 10%;
+            margin: 0%;
+        }
+
+
+        h2{
+            color: red;
+        }
+
+        button{
+            text-align: center;
+            color: white;
+            width: 20%;
+            height: 25%;
+            border: 2px solid palevioletred;
+            padding-top: 15px;
+            padding-right: 15px;
+            padding-bottom: 15px;
+            padding-left: 15px;
+            margin-left: 40%;
+            animation-name: button;
+            animation-duration: 4s;
+            animation-direction: alternate;
+            transition: ease-in-out;
+            animation-fill-mode: forwards;
+
+            
+        }
+       
+    </STYle>
+</head>
+<body>
+    <h2 id="a1">Animation</h2>
+    
+<div>
+    <button class="material-bubble">HOVER ME</button>
+    <br>
+    <br>
+    <button>HOVER ME</button>
+    <br>
+    <br>
+
+    <button>HOVER ME</button>
+    <br>
+    <br>
+    <button>HOVER ME</button>
+    <br>
+</div>
+</body>
+</html>

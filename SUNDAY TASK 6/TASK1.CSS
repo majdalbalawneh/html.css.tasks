@@ -1,0 +1,36 @@
+H1{ color: red;}
+}
+body{
+    margin-top: 0%;
+    padding-left: 0%;
+    background-color: rgb(63, 63, 63);
+}
+.bla{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.A{
+    position: relative;
+    display: block;
+    color: white;
+    margin: 40PX 0;
+    border: 2PX solid#fd7d7d;
+    padding: 20PX 70PX;
+    overflow: hidden;
+    transition: 1s all ease;
+}
+.A::before{
+    background: #fd8080;
+    content:"";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    transition: all 1s ease;
+}
+.A1{
+    
+}

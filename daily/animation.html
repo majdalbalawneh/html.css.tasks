@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+    h1{
+    color: red;
+        }
+        body{
+  margin: 0;
+  padding: 0;
+  background: #2d3436;
+}
+.ani{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 300px;
+}
+A{
+  position: relative;
+  display: block;
+  color: white;
+  font-size: 14px;
+  font-family: "montserrat";
+  text-decoration: none;
+  margin: 30px 0;
+  border: 2px solid #ff7675;
+  padding: 14px 60px;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 1s all ease;
+}
+A:before{
+  background: #ff7675;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: -1;
+  transition: all 1s ease;
+}
+
+.A1:before{
+  width: 0%;
+  height: 100%;
+}
+
+.A1:hover::before{
+  width: 100%;
+}
+
+
+.A2::before{
+  width: 100%;
+  height: 0%;
+}
+.A2:hover::before{
+  height: 100%;
+}
+
+.A3::before{
+  width: 100%;
+  height: 0%;
+  transform: translate(-50%,-50%) rotate(45deg);
+}
+.A3:hover::before{
+  height: 380%;
+}
+
+.A4::before{
+  width: 100%;
+  height: 0%;
+  transform: translate(-50%,-50%) rotate(-45deg);
+}
+.A4:hover::before{
+  height: 380%;
+}
+         
+    </style>
+</head>
+<body>
+    <h1>Animation</h1>
+<div class="ani">
+    <button class="A1">Hover Me</button>
+    <button class="A2">Hover Me</button>
+    <button class="A3">Hover Me</button>
+    <button class="A4">Hover Me</button>
+</div>
+    
+</body>
+</html>
