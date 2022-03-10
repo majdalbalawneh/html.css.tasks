@@ -21,15 +21,20 @@
             .parent div{
               text-align: center;
             padding: 20px ;
-            border: 1px solid white;
+            border: 3px solid white;
            }
            .a{
   grid-column: 1/span3;
   background-color: black;
 }
 .b{
-  grid-column:2/span 3;
-  background-color: orange;
+  height: 30vh;
+            background-color: orange;
+            grid-template-columns: span 2 ;
+            grid-template-rows: 1;
+            grid-column-start: 1; grid-column-end: 3;
+            grid-row-start: 2;
+
 }
           
  .c{
@@ -40,25 +45,7 @@
     grid-column:1/span4;
     background-color: blue
   }
- .e{
-  grid-column-start: ;
-  grid-column-end: ;
-  }
-  .f{
-  grid-column-start: ;
-  grid-column-end: ;
-  }
-  .j{
-  grid-column-start: ;
-  grid-column-end: ;
-  }
-  .h{
-  grid-column-start: ;
-  grid-column-end: ;
-  }
-  .i{
-  grid-column-start: ;
-  grid-column-end: ;
+
   
 
 
@@ -70,13 +57,7 @@
         <div class="b"></div>
         <div class="c"></div>
         <div class="d"></div>
-        <div class="e">5</div> 
-      <!--<
-       <div class="f">6</div>
-        <div class="j">7</div>
-        <div class="h">8</div>
-        <div class="i">9</div>
-                             -->   
+          
     </div>
 </body>
 </html>
